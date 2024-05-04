@@ -1,0 +1,241 @@
+@import url("https://fonts.cdnfonts.com/css/molot");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+header .navbar {
+  background-color: #111214;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+header .navbar .logo {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  margin-left: 12px;
+  justify-content: flex-start;
+}
+header .navbar .logo .bi-list {
+  padding: 5px;
+  border-radius: 120px;
+  cursor: pointer;
+  margin-right: 12px;
+  display: none;
+}
+header .navbar .logo .bi-list:hover {
+  background-color: #5c595b;
+}
+header .navbar .logo img {
+  height: 45px;
+  width: 45px;
+  border-radius: 120px;
+}
+header .navbar .logo h1 {
+  font-size: 28px;
+  margin-left: 6px;
+  color: white;
+}
+header .navbar .logo h1 span {
+  color: #7811F4;
+  font-size: 30px;
+}
+header .navbar .opcciones {
+  width: 33%;
+}
+header .navbar .opcciones ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+header .navbar .opcciones ul li {
+  list-style: none;
+  font-weight: 200;
+}
+header .navbar .opcciones ul li a {
+  cursor: pointer;
+  transition: all 0.4s;
+  color: #b8bbc4;
+  font-size: 14px;
+  font-weight: 400;
+}
+header .navbar .opcciones ul li a:hover {
+  color: white;
+}
+header .navbar .panel {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .navbar .panel .login {
+  width: 84px;
+}
+header .navbar .panel .logito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+}
+header .navbar .panel .logito img {
+  width: 45px;
+  height: 45px;
+  border-radius: 120px;
+  transition: filter 0.4s ease;
+}
+header .navbar .panel .logito img:hover {
+  filter: brightness(80%);
+}
+header .navbar .panel .menu {
+  background-color: #111214;
+  position: absolute;
+  top: 66px;
+  padding: 13px;
+  right: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+header .navbar .panel .menu ul li {
+  list-style: none;
+  max-width: 100%;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+header .navbar .panel .menu ul li a {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  padding: 9px;
+}
+header .navbar .panel .menu ul li .red {
+  color: #E31245;
+}
+header .navbar .panel .menu ul li:hover {
+  background-color: #3d3f44;
+}
+header .navbar .panel .LoginModalA {
+  width: 302px;
+}
+header .navbar .panel .LoginModalA .titulo {
+  text-align: center;
+  color: #b8bbc4;
+  font-size: 12px;
+}
+header .navbar .panel .LoginModalA .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 11px;
+  margin-bottom: 20px;
+}
+header .navbar .panel .LoginModalA .buttons span {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  color: #b8bbc4;
+}
+header .navbar .panel .LoginModalA .buttons span span {
+  display: block;
+  width: 100%;
+  height: 0.1px;
+  background-color: white;
+  width: 34%;
+}
+header .navbar .panel .LoginModalA .buttons a {
+  padding: 12px;
+  border-radius: 9px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  width: 79%;
+  gap: 4px;
+}
+header .navbar .panel .LoginModalA .buttons a:hover {
+  background-color: #6c0ae1;
+}
+header .navbar .panel .LoginModalA .buttons .discord {
+  background-color: #7811F4;
+}
+header .navbar .panel .LoginModalA .buttons .google {
+  background-color: #7811F4;
+}
+header .MenuMovil {
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  animation: difuminaicon 0.4s;
+}
+header .MenuMovil .SubMenu {
+  animation: openNavbar 0.6s;
+  background-color: #111214;
+  height: 100%;
+  width: 30vh;
+  position: absolute;
+  box-shadow: 0 0 12px #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .MenuMovil .SubMenu h1 {
+  font-size: 28px;
+  margin-top: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .MenuMovil .SubMenu h1 span {
+  color: #7811F4;
+  font-size: 30px;
+}
+@media (max-width: 600px) {
+  header .navbar {
+    justify-content: space-between;
+  }
+  header .navbar .logo {
+    width: auto;
+  }
+  header .navbar .logo .bi-list {
+    display: block;
+  }
+  header .navbar .logo img {
+    display: none;
+  }
+  header .navbar .opcciones {
+    display: none;
+  }
+}
+@keyframes difuminaicon {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes openNavbar {
+  from {
+    left: -200;
+  }
+  to {
+    left: 0;
+  }
+}
